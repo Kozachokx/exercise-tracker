@@ -1,0 +1,3 @@
+# Exercise tracker
+
+Pet project
