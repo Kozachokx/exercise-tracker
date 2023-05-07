@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/Kozachokx/exercise-tracker/issues"
   },
+  "prisma": {
+    "schema": "src/database/schema.prisma"
+  },
   "homepage": "https://github.com/Kozachokx/exercise-tracker#readme",
   "devDependencies": {
     "@types/cors": "^2.8.13",
@@ -40,9 +43,14 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@joi/date": "^2.1.0",
+    "@prisma/client": "^4.13.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "joi": "^17.9.2"
+    "joi": "^17.9.2",
+    "mongodb": "^5.3.0",
+    "prisma": "^4.13.0",
+    "prisma-joi-generator": "^0.2.0"
   }
 }

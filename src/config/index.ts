@@ -16,7 +16,7 @@ export const CONFIG: {
 } = {
   SERVER_PORT: parseInt(`${ENV.PORT}`, 10) || 3000,
   // SERVER_PORT: Number.isNaN(Number('sdk3')) ? 3000 : parseInt(`${ENV.PORT}`, 10),
-  APPLICATION_NAME: ENV.APPLICATION_NAME || 'excercise-tracker-api',
+  APPLICATION_NAME: ENV.APPLICATION_NAME || 'exercise-tracker-api',
   API_KEY: null,
 
   NODE_ENV,
