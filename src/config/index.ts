@@ -19,6 +19,6 @@ export const CONFIG: {
   APPLICATION_NAME: ENV.APPLICATION_NAME || 'exercise-tracker-api',
   API_KEY: null,
 
-  NODE_ENV,
+  NODE_ENV, // not in use
   IS_LOCAL: NODE_ENV.toLowerCase() === 'local',
 };
