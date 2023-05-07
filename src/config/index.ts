@@ -12,7 +12,6 @@ export const CONFIG: {
 
   NODE_ENV: string;
   IS_LOCAL: boolean;
-
 } = {
   SERVER_PORT: parseInt(`${ENV.PORT}`, 10) || 3000,
   // SERVER_PORT: Number.isNaN(Number('sdk3')) ? 3000 : parseInt(`${ENV.PORT}`, 10),
