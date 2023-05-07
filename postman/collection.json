@@ -1,0 +1,723 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "8d9ab9cb-ca27-4f53-9f27-77d8c93a1723",
+      "name": "Exercise Tracker",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-05-07T21:12:13.000Z",
+      "uid": "13600409-8d9ab9cb-ca27-4f53-9f27-77d8c93a1723"
+    },
+    "item": [
+      {
+        "name": "Users",
+        "item": [
+          {
+            "name": "Create user",
+            "id": "065670f8-928a-4929-8e6b-62db6e4f9ef7",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\r\n    \"data\": {\r\n        \"username\": \"User Example\"\r\n    }\r\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "{{ENDPOINT}}/users",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users"
+                ]
+              }
+            },
+            "response": [
+              {
+                "id": "7b32c430-6f87-48a0-9447-1761c9641509",
+                "name": "Create user",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [],
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"data\": {\r\n        \"username\": \"Kozachok\"\r\n    }\r\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  },
+                  "url": {
+                    "raw": "{{ENDPOINT}}/users",
+                    "host": [
+                      "{{ENDPOINT}}"
+                    ],
+                    "path": [
+                      "users"
+                    ]
+                  }
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Powered-By",
+                    "value": "Express"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "64"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"40-JXQIAUH5xTI52Npimlbtr081QGU\""
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Wed, 03 May 2023 18:03:51 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                  },
+                  {
+                    "key": "Keep-Alive",
+                    "value": "timeout=5"
+                  }
+                ],
+                "cookie": [],
+                "responseTime": null,
+                "body": "{\n    \"data\": {\n        \"id\": \"6452a207f48d2c762413b6cd\",\n        \"username\": \"kozachok\"\n    }\n}",
+                "uid": "13600409-7b32c430-6f87-48a0-9447-1761c9641509"
+              },
+              {
+                "id": "14aee1f1-a0ab-4b2d-a01d-a09937708f06",
+                "name": "Create user",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [],
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"data\": {\r\n        \"username\": \"User Example\"\r\n    }\r\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  },
+                  "url": {
+                    "raw": "{{ENDPOINT}}/users",
+                    "host": [
+                      "{{ENDPOINT}}"
+                    ],
+                    "path": [
+                      "users"
+                    ]
+                  }
+                },
+                "status": "Created",
+                "code": 201,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Powered-By",
+                    "value": "Express"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "43"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"2b-b7id8kGtetGuCtaqZtcaVyYCwXw\""
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Sun, 07 May 2023 21:09:52 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                  },
+                  {
+                    "key": "Keep-Alive",
+                    "value": "timeout=5"
+                  }
+                ],
+                "cookie": [],
+                "responseTime": null,
+                "body": "{\n    \"data\": {\n        \"id\": 3,\n        \"username\": \"User Example\"\n    }\n}",
+                "uid": "13600409-14aee1f1-a0ab-4b2d-a01d-a09937708f06"
+              }
+            ],
+            "uid": "13600409-065670f8-928a-4929-8e6b-62db6e4f9ef7"
+          },
+          {
+            "name": "Get all",
+            "id": "460ed216-a30c-4c09-b9d6-a43aeb90fed1",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users"
+                ]
+              }
+            },
+            "response": [],
+            "uid": "13600409-460ed216-a30c-4c09-b9d6-a43aeb90fed1"
+          },
+          {
+            "name": "Get one by id",
+            "id": "4cb3f069-191e-4d1a-86f5-bd22de1879e3",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users/0",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  "0"
+                ]
+              }
+            },
+            "response": [
+              {
+                "id": "d36e1241-bc49-42ca-b0c5-4ce10934072e",
+                "name": "Get one by id",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [],
+                  "url": {
+                    "raw": "{{ENDPOINT}}/users/0",
+                    "host": [
+                      "{{ENDPOINT}}"
+                    ],
+                    "path": [
+                      "users",
+                      "0"
+                    ]
+                  }
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Powered-By",
+                    "value": "Express"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "34"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"22-/CRSQGJzKxqlOh48H16W9li9ajs\""
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Sun, 07 May 2023 20:56:52 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                  },
+                  {
+                    "key": "Keep-Alive",
+                    "value": "timeout=5"
+                  }
+                ],
+                "cookie": [],
+                "responseTime": null,
+                "body": "{\n    \"data\": {\n        \"id\": 0,\n        \"username\": \"two\"\n    }\n}",
+                "uid": "13600409-d36e1241-bc49-42ca-b0c5-4ce10934072e"
+              }
+            ],
+            "uid": "13600409-4cb3f069-191e-4d1a-86f5-bd22de1879e3"
+          },
+          {
+            "name": "Get user logs",
+            "id": "b404a5ee-91e0-49dd-8981-a5e445db83e3",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users/0/logs",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  "0",
+                  "logs"
+                ]
+              }
+            },
+            "response": [
+              {
+                "id": "e2c7fee8-035b-4b63-9767-ab21589705d0",
+                "name": "Get user logs",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [],
+                  "url": {
+                    "raw": "{{ENDPOINT}}/users/0/logs",
+                    "host": [
+                      "{{ENDPOINT}}"
+                    ],
+                    "path": [
+                      "users",
+                      "0",
+                      "logs"
+                    ]
+                  }
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Powered-By",
+                    "value": "Express"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "216"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"d8-H10+b/ro8F8VKY3K6jyBXtiGWMM\""
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Sun, 07 May 2023 21:20:02 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                  },
+                  {
+                    "key": "Keep-Alive",
+                    "value": "timeout=5"
+                  }
+                ],
+                "cookie": [],
+                "responseTime": null,
+                "body": "{\n    \"data\": {\n        \"id\": 0,\n        \"username\": \"two\",\n        \"logs\": [\n            {\n                \"id\": 2,\n                \"description\": \"Description\",\n                \"duration\": 30,\n                \"date\": \"2023-12-12T00:00:00.000Z\"\n            },\n            {\n                \"id\": 3,\n                \"description\": \"Now \",\n                \"duration\": 30,\n                \"date\": \"2023-05-07T20:40:06.935Z\"\n            }\n        ],\n        \"count\": 2\n    }\n}",
+                "uid": "13600409-e2c7fee8-035b-4b63-9767-ab21589705d0"
+              }
+            ],
+            "uid": "13600409-b404a5ee-91e0-49dd-8981-a5e445db83e3"
+          },
+          {
+            "name": "Delete user by id",
+            "id": "ed51b292-8f78-40f7-a86e-6bd6947150be",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users/3",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  "3"
+                ]
+              }
+            },
+            "response": [],
+            "uid": "13600409-ed51b292-8f78-40f7-a86e-6bd6947150be"
+          }
+        ],
+        "id": "8faf5881-5eef-47b0-bd7d-fb41bd28a89d",
+        "uid": "13600409-8faf5881-5eef-47b0-bd7d-fb41bd28a89d"
+      },
+      {
+        "name": "Exercise",
+        "item": [
+          {
+            "name": "Create Exercise",
+            "id": "fa06cafb-e6d2-408d-aad5-4ef67f19e9f3",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\r\n    \"data\": {\r\n        \"description\": \"Description\",\r\n        \"duration\": 30,\r\n        \"date\": \"2023-12-12\"\r\n    }\r\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "{{ENDPOINT}}/users/:userId/exercises",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  ":userId",
+                  "exercises"
+                ],
+                "variable": [
+                  {
+                    "key": "userId",
+                    "value": "0"
+                  }
+                ]
+              }
+            },
+            "response": [
+              {
+                "id": "8cf235a5-fa37-48c3-94e6-51dd9fb1b502",
+                "name": "Create Exercise",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [],
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"data\": {\r\n        \"description\": \"string\",\r\n        \"duration\": 30,\r\n        \"date\": \"2023-12-12\"\r\n    }\r\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  },
+                  "url": {
+                    "raw": "{{ENDPOINT}}/users/:userId/exercises",
+                    "host": [
+                      "{{ENDPOINT}}"
+                    ],
+                    "path": [
+                      "users",
+                      ":userId",
+                      "exercises"
+                    ],
+                    "variable": [
+                      {
+                        "key": "userId",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                },
+                "status": "Created",
+                "code": 201,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Powered-By",
+                    "value": "Express"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "191"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"bf-TlXdqq/+M8qKSNNAJgk3IPJpTQs\""
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Sun, 07 May 2023 19:49:32 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                  },
+                  {
+                    "key": "Keep-Alive",
+                    "value": "timeout=5"
+                  }
+                ],
+                "cookie": [],
+                "responseTime": null,
+                "body": "{\n    \"data\": {\n        \"id\": \"645800bd34959e8f87a7e252\",\n        \"description\": \"string\",\n        \"duration\": 30,\n        \"date\": \"2023-12-12T00:00:00.000Z\",\n        \"userId\": 0,\n        \"user\": {\n            \"uuid\": \"6457eee66eb80959a6f78ecc\",\n            \"id\": 0,\n            \"username\": \"two\"\n        }\n    }\n}",
+                "uid": "13600409-8cf235a5-fa37-48c3-94e6-51dd9fb1b502"
+              }
+            ],
+            "uid": "13600409-fa06cafb-e6d2-408d-aad5-4ef67f19e9f3"
+          },
+          {
+            "name": "Get all",
+            "id": "e3c9209e-2fb2-46e9-b3c5-d44698293a43",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users/:userId/exercises",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  ":userId",
+                  "exercises"
+                ],
+                "variable": [
+                  {
+                    "key": "userId",
+                    "value": "0"
+                  }
+                ]
+              }
+            },
+            "response": [],
+            "uid": "13600409-e3c9209e-2fb2-46e9-b3c5-d44698293a43"
+          },
+          {
+            "name": "Get one by id",
+            "id": "64647349-1acc-4e18-83a2-ba944206efc9",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users/:userId/exercises/:exerciseId",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  ":userId",
+                  "exercises",
+                  ":exerciseId"
+                ],
+                "variable": [
+                  {
+                    "key": "userId",
+                    "value": "0"
+                  },
+                  {
+                    "key": "exerciseId",
+                    "value": "0"
+                  }
+                ]
+              }
+            },
+            "response": [],
+            "uid": "13600409-64647349-1acc-4e18-83a2-ba944206efc9"
+          },
+          {
+            "name": "Delete by id",
+            "id": "5e6541ff-6054-440c-a53e-9a60c70d3e3a",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{ENDPOINT}}/users/:userId/exercises/:exerciseId",
+                "host": [
+                  "{{ENDPOINT}}"
+                ],
+                "path": [
+                  "users",
+                  ":userId",
+                  "exercises",
+                  ":exerciseId"
+                ],
+                "variable": [
+                  {
+                    "key": "userId",
+                    "value": "0"
+                  },
+                  {
+                    "key": "exerciseId",
+                    "value": "1"
+                  }
+                ]
+              }
+            },
+            "response": [
+              {
+                "id": "6abf3252-ab5f-4ecb-8ed5-8c88e97115cd",
+                "name": "Delete by id",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [],
+                  "url": {
+                    "raw": "{{ENDPOINT}}/users/:userId/exercises/:exerciseId",
+                    "host": [
+                      "{{ENDPOINT}}"
+                    ],
+                    "path": [
+                      "users",
+                      ":userId",
+                      "exercises",
+                      ":exerciseId"
+                    ],
+                    "variable": [
+                      {
+                        "key": "userId",
+                        "value": "0"
+                      },
+                      {
+                        "key": "exerciseId",
+                        "value": "1"
+                      }
+                    ]
+                  }
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Powered-By",
+                    "value": "Express"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "25"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"19-n5oYK1810PAFL6cw4OdviLpf8w0\""
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Sun, 07 May 2023 20:33:55 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                  },
+                  {
+                    "key": "Keep-Alive",
+                    "value": "timeout=5"
+                  }
+                ],
+                "cookie": [],
+                "responseTime": null,
+                "body": "{\n    \"data\": {\n        \"success\": true\n    }\n}",
+                "uid": "13600409-6abf3252-ab5f-4ecb-8ed5-8c88e97115cd"
+              }
+            ],
+            "uid": "13600409-5e6541ff-6054-440c-a53e-9a60c70d3e3a"
+          }
+        ],
+        "id": "9f49525e-f275-4aae-91cc-6c1e8314402e",
+        "uid": "13600409-9f49525e-f275-4aae-91cc-6c1e8314402e"
+      }
+    ],
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "id": "52d1fb93-4970-4552-979d-2828f592bc1e",
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "id": "97a694e3-479f-40aa-beaa-4cedf11fd3c5",
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ],
+    "variable": [
+      {
+        "id": "a2a0650c-d2bc-47f7-8b1b-79ab4d2b4d92",
+        "key": "ENDPOINT",
+        "value": "localhost:3000",
+        "type": "string"
+      }
+    ]
+  }
+}
