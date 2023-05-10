@@ -24,11 +24,6 @@ model User {
   exercises   Exercise[]
 }
 
-model Firmwa {
-  id       String @id @default(auto()) @map("_id") @db.ObjectId
-  username String @unique
-}
-
 model Exercise {
   oid         String    @id @default(auto())  @map("_id") @db.ObjectId
   id          Int       @db.Int @unique       @map("id")
