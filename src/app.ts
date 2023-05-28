@@ -3,10 +3,10 @@ import cors from 'cors';
 
 import { CONFIG } from './config';
 import { createRouter } from './routes';
-import { router as healthCheck } from './routes/router';
+// import { router as healthCheck } from './routes/router';
 import { notFoundHandler, errorMiddleware } from './middlewares';
 import { logOnceSysInfo } from './utils';
-
+import path from 'path';
 const app: Application = express();
 
 export async function createServer() {
@@ -14,7 +14,13 @@ export async function createServer() {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  app.use(healthCheck);
+  app.use(express.static('public'));
+  app.get('/', (req, res) => {
+    const projectRoot = path.resolve('./');
+    res.sendFile(projectRoot + '/views/index.html');
+  });
+
+  // app.use(healthCheck);
 
   createRouter(app);
 
