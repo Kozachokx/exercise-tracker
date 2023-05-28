@@ -4,7 +4,7 @@
       "_postman_id": "8d9ab9cb-ca27-4f53-9f27-77d8c93a1723",
       "name": "Exercise Tracker",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2023-05-07T21:12:13.000Z",
+      "updatedAt": "2023-05-28T21:38:21.000Z",
       "uid": "13600409-8d9ab9cb-ca27-4f53-9f27-77d8c93a1723"
     },
     "item": [
@@ -292,14 +292,20 @@
               "method": "GET",
               "header": [],
               "url": {
-                "raw": "{{ENDPOINT}}/users/0/logs",
+                "raw": "{{ENDPOINT}}/users/:userId/logs",
                 "host": [
                   "{{ENDPOINT}}"
                 ],
                 "path": [
                   "users",
-                  "0",
+                  ":userId",
                   "logs"
+                ],
+                "variable": [
+                  {
+                    "key": "userId",
+                    "value": "4"
+                  }
                 ]
               }
             },
@@ -534,7 +540,7 @@
                 "variable": [
                   {
                     "key": "userId",
-                    "value": "0"
+                    "value": ""
                   }
                 ]
               }
@@ -693,7 +699,7 @@
       {
         "listen": "prerequest",
         "script": {
-          "id": "52d1fb93-4970-4552-979d-2828f592bc1e",
+          "id": "dcecebfc-ddc8-455a-89b1-25663190dad2",
           "type": "text/javascript",
           "exec": [
             ""
@@ -703,7 +709,7 @@
       {
         "listen": "test",
         "script": {
-          "id": "97a694e3-479f-40aa-beaa-4cedf11fd3c5",
+          "id": "62656159-581e-4dc5-b488-912b13b8c6f6",
           "type": "text/javascript",
           "exec": [
             ""
@@ -713,9 +719,9 @@
     ],
     "variable": [
       {
-        "id": "a2a0650c-d2bc-47f7-8b1b-79ab4d2b4d92",
+        "id": "5b8f7757-3edf-4902-8486-43eb4736fb0d",
         "key": "ENDPOINT",
-        "value": "localhost:3000",
+        "value": "localhost:3000/api",
         "type": "string"
       }
     ]
